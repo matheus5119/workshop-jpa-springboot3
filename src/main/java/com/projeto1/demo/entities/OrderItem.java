@@ -13,7 +13,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_order_item")
 public class OrderItem implements Serializable {
-
 	private static final long serialVersionUID = 1L;
 
 	@EmbeddedId
@@ -23,7 +22,6 @@ public class OrderItem implements Serializable {
 	private Double price;
 	
 	public OrderItem() {
-		
 	}
 
 	public OrderItem(Order order, Product product, Integer quantity, Double price) {
